@@ -1,0 +1,3 @@
+model,target,MAE,RMSE,R2
+Linear Regression,NOX,5.821,8.072,0.507
+Linear Regression,CO,0.841,1.469,0.582
