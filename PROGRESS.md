@@ -13,3 +13,9 @@ Created repo, added dataset and project plan. Next: EDA.
 - Shared helper (src/common.py): data loading, 80/20 random split (seed 42), MAE/RMSE/R2.
 - Linear Regression: NOx MAE 5.82, RMSE 8.07, R2 0.51; CO MAE 0.84, RMSE 1.47, R2 0.58.
 - Only about half the variation is explained, so the relationships are probably non-linear. Next: Random Forest.
+
+## Stage 3 - Random Forest
+- Random Forest (100 trees): NOx MAE 2.61, RMSE 4.13, R2 0.87; CO MAE 0.48, RMSE 1.05, R2 0.79.
+- Error roughly halved compared with Linear Regression, which confirms the relationships are non-linear.
+- Feature importance agrees with the EDA: NOx depends mainly on ambient temperature (AT), CO on turbine inlet temperature (TIT).
+- Next: XGBoost.
