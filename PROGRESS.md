@@ -19,3 +19,9 @@ Created repo, added dataset and project plan. Next: EDA.
 - Error roughly halved compared with Linear Regression, which confirms the relationships are non-linear.
 - Feature importance agrees with the EDA: NOx depends mainly on ambient temperature (AT), CO on turbine inlet temperature (TIT).
 - Next: XGBoost.
+
+## Stage 4 - XGBoost
+- XGBoost (300 trees, depth 6): NOx MAE 3.03, R2 0.85; CO MAE 0.52, R2 0.80.
+- Similar to Random Forest: slightly worse on NOx, slightly better on CO R2 and RMSE. Both far better than Linear Regression.
+- Both rank AT (NOx) and TIT (CO) as the most important sensors.
+- Not tuned yet, so the paper's finding that XGBoost is best was not clearly reproduced. Next: MLP.
