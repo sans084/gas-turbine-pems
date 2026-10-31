@@ -25,3 +25,9 @@ Created repo, added dataset and project plan. Next: EDA.
 - Similar to Random Forest: slightly worse on NOx, slightly better on CO R2 and RMSE. Both far better than Linear Regression.
 - Both rank AT (NOx) and TIT (CO) as the most important sensors.
 - Not tuned yet, so the paper's finding that XGBoost is best was not clearly reproduced. Next: MLP.
+
+## Stage 5 - MLP (neural network)
+- MLP (64-32 hidden neurons, scaled inputs and target, early stopping): NOx MAE 2.76, R2 0.87; CO MAE 0.55, R2 0.77.
+- Matches the tree models on NOx (lowest NOx RMSE, 4.11) but is slightly worse on CO. All non-linear models far outperform Linear Regression.
+- Consistent with the paper: deep learning is competitive with tree models on tabular data but does not clearly beat them.
+- Next: Stage 6, full model comparison and drift test.
